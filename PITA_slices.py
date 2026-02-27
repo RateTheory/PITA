@@ -604,7 +604,7 @@ if __name__ == "__main__":
 
     # =====================  CONFIGURATION  =====================
     config = {
-        "base_dir":   "",       # Parent directory containing system folders
+        "base_dir":   "Cu-H",       # Parent directory containing system folders
         "systems":    ["Rad"],       # List of system names, e.g. ["Rad", "Oxo3"]
                                   #   None → auto-detect folders with 'Rad' or 'Oxo'
         "n_samples":  12,          # Number of Hessian slices to sample (>= 3)
@@ -642,5 +642,6 @@ if __name__ == "__main__":
         )
         results[system_name] = res
         print()
+
 
     print("Done.")
