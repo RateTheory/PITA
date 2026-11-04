@@ -2,7 +2,7 @@
 """
 Created on Sat Feb 21 20:17:49 2026
 
-@author: Usama
+@author: Usama Saleem, Jeongmin Chae, Selin Bac
 """
 
 
@@ -490,7 +490,7 @@ def reconstruct_system(
     cg_tol, cg_maxit, cg_reg : CG solver parameters.
     """
     # ---- Load ----
-    pkl_path = os.path.join(base_dir, system_name, "MatPKL", f"{system_name}.pkl")
+    pkl_path = os.path.join(base_dir, system_name, "MatPKL", f"{system_name}.pkl") # Modify according to directory structure
     df = pd.read_pickle(pkl_path).reset_index(drop=True)
     s_values = np.array(df["s"])
     n_points = len(df)
@@ -605,11 +605,11 @@ if __name__ == "__main__":
     # =====================  CONFIGURATION  =====================
     config = {
         "base_dir":   "Cu-H",       # Parent directory containing system folders
-        "systems":    ["Rad"],       # List of system names, e.g. ["Rad", "Oxo3"]
+        "systems":    ["Rad"],       # List of system names, e.g. ["Rad", "Oxo"]
                                   #   None → auto-detect folders with 'Rad' or 'Oxo'
-        "n_samples":  12,          # Number of Hessian slices to sample (>= 3)
+        "n_samples":  10,          # Number of Hessian slices to sample (>= 3)
         "n_drop":     7,          # Trivial eigenvalue modes to discard
-        "lam":        0.75,       # Blending weight: 0 = polynomial, 1 = interpolation
+        "lam":        0.85,       # Blending weight: 0 = polynomial, 1 = interpolation
         "eta":        0.001,      # Gradient-descent step size (post-CG)
         "cg_tol":     1e-50,      # Conjugate-gradient tolerance
         "cg_maxit":   2000,       # Conjugate-gradient max iterations
