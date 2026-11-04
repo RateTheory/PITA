@@ -570,10 +570,10 @@ def reconstruct_system(
         "Hessian": hess_list,
     }).set_index("Distance")
 
-    pkl_out = os.path.join(base_dir, system_name, f"{system_name}_Hesscg_indexbased.pkl")
+    pkl_out = os.path.join(base_dir, system_name, f"{system_name}_PITA.pkl")
     out_df.to_pickle(pkl_out)
 
-    mat_out = os.path.join(base_dir, system_name, f"result_{system_name}_Hesscg_indexbased.mat")
+    mat_out = os.path.join(base_dir, system_name, f"result_{system_name}_PITA.mat")
     savemat(mat_out, {
         "Xvmc2": matrix,
         "s": s,
