@@ -2,7 +2,7 @@
 
 PITA estimates mass-weighted, unprojected Hessians along a reaction path from a small number of explicitly computed Hessians. You can then use the recovered Hessians in variational transition state theory with multidimensional tunneling (VTST/MT), so you don't need a full Hessian at every point along the path.
 
-## Repository contents
+## Repository 
 
 | File | Purpose |
 | --- | --- |
@@ -15,7 +15,7 @@ PITA estimates mass-weighted, unprojected Hessians along a reaction path from a 
 
 - Eigenvalues
 - Eigenvectors
-- Gradient
+- Gradients
 - Unprojected, mass-weighted Hessians
 
 ## Usage
@@ -36,7 +36,8 @@ PITA estimates mass-weighted, unprojected Hessians along a reaction path from a 
 
 ## Requirements
 
-<!-- List the dependencies and their versions, e.g. numpy, scipy, pandas -->
+numpy, scipy, pandas, tensorly
+
 
 ## Citation
 
