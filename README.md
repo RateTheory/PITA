@@ -8,6 +8,7 @@ PITA estimates mass-weighted, unprojected Hessians along a reaction path from a 
 | --- | --- |
 | `PITA_slices.py` | Main PITA algorithm. Reconstructs Hessians along the reaction path. |
 | `RateConstantCalculator.py` | Computes tunneling coefficients from a PITA-recovered `.pkl` file. |
+| `SCT.py' | Contains supporting functions for `RateConstantCalculator.py`. |
 
 ## Input data
 
