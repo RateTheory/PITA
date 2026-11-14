@@ -12,12 +12,13 @@ PITA estimates mass-weighted, unprojected Hessians along a reaction path from a 
 
 ## Input data
 
-`PITA_slices.py` reads the ground truth `.pkl` files. Each `.pkl` file contains the following quantities along the converged intrinsic reaction coordinate *s*:
+`PITA_slices.py` reads the ground truth `.pkl` files. Each `.pkl` file should contain the following quantities along the converged intrinsic reaction coordinate (IRC) *s*:
 
 - Eigenvalues
 - Eigenvectors
 - Gradients
 - Unprojected, mass-weighted Hessians
+
 
 ## Usage
 
